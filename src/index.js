@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import WebFont from 'webfontloader';
 import './index.css';
-import App from './App';
+import Routes from './routes';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//Cargar la fuente
+WebFont.load({
+  google: {
+    families: ['Amatic SC']
+  }
+});
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
+//Renderiza los componentes en el div root del html
+ReactDOM.render(<Routes />, document.getElementById('root'));
+
+//Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
