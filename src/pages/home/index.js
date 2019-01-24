@@ -30,7 +30,16 @@ class Home extends Component {
           <ScrollUpButton EasingType="linear" ShowAtPosition={20} />
 
         </Container>
+
+        {/*Pié de página*/}
         <Footer />
+
+        {/*Contador de visitas */}
+        <img
+          style={{ width: '50px', height: '10px' }}
+          src="https://smallseotools.com/counterDisplay?code=0b4d8577c9f2850728ce8b93eb468af8&style=0015&pad=6&type=page&initCount="
+          title="Web Counter" Alt="Web Counter" border="0" />
+          
       </div>
     );
   }
