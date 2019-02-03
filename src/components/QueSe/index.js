@@ -20,6 +20,7 @@ const QueSe = () => {
               <List.Item>jQuery</List.Item>
               <List.Item>Express</List.Item>
               <List.Item>Heroku</List.Item>
+              <List.Item>Solidity</List.Item>
             </List>
           </Grid.Column>
           <Grid.Column>
